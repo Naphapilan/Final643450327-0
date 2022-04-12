@@ -19,15 +19,6 @@ namespace Final643450327_0
         {
 
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="getmoney"></param>
-        /// <param name="total"></param>
-        public void getTotalPrice(double getmoney,double total)
-        {
-
-        }
         public double totalPrice()
         {
             return 0;

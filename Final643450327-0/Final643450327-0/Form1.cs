@@ -14,58 +14,6 @@ namespace Final643450327_0
         Product product = new Product();
         Coupon coupon = new Coupon();
         SaleManagement saleManagement = new SaleManagement();
-        public static void main()
-        {         
-
-        }
-        public void loadProductFormFile()
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "CSV(.csv)|*.csv";
-            openFile.Title = "Please select file";
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                dataGridView1.DataSource = null;
-
-                DataTable dt = new DataTable();
-                string[] colName = { "รายการ", "จำนวน", "รวม" };
-
-                foreach (string col in colName)
-                {
-                    dt.Columns.Add(col);
-                }
-
-                foreach (string file in openFile.FileNames)
-                {
-                    try
-                    {
-                        if (File.Exists(file) == true)
-                        {
-                            //import file data
-                            StreamReader csv = new StreamReader(file);
-                            string textLine; //string line data
-                            string[] splitLine; // use array to save split data
-
-                            do
-                            {
-                                textLine = csv.ReadLine();
-                                splitLine = textLine.Split(",");
-                                dt.Rows.Add(splitLine);
-                            }
-                            while (csv.Peek() != -1);
-                            csv.Close();
-                            csv.Dispose();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                dataGridView1.DataSource = dt;
-            }
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -447,8 +395,7 @@ namespace Final643450327_0
         {
             string totalcoupon = this.textBox1.Text;  
             double Coupon = Convert.ToDouble(totalcoupon);
-            coupon.createCoupon(Coupon);
-          //  double couponCode = coupon.getCouponCode(); 
+            coupon.createCoupon(Coupon); 
             double totalCoupon = coupon.getCoupon();
             textBox2.Text = totalCoupon.ToString();
             labelCouponCode.Text = coupon.getCouponCode().ToString();

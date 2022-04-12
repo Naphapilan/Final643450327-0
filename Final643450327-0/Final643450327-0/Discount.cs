@@ -8,9 +8,9 @@ namespace Final643450327_0
 {
     internal class Discount
     {
-      /*public double getDiscount()
+        public double getDiscount()
         {
-
-        }*/
+            return 0;
+        }
     }
 }

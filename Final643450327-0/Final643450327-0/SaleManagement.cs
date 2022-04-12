@@ -8,7 +8,6 @@ namespace Final643450327_0
 {
     internal class SaleManagement
     {
-      //  private Coupon[10] coupon;
         private Bill bill;
         double totalPrice = 0;
         public void newBill()
@@ -30,7 +29,7 @@ namespace Final643450327_0
         }
         public bool addProducttoBill(Product p)
         {
-            return false;
+            return true;
         }
         public double getBillTotalPrice()
         {

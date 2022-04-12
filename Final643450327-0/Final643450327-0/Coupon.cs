@@ -15,7 +15,7 @@ namespace Final643450327_0
         /// </summary>
         /// <param name="min"></param>
         /// <returns></returns>
-       public  void createCoupon(double min)
+       public void createCoupon(double min)
         {
             this.minimunPrice = min;
             if(min >= 50 && min < 100)
