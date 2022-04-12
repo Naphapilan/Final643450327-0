@@ -40,8 +40,7 @@ namespace Final643450327_0
             }
         }
         public double getCoupon()
-        {
-           
+        {  
             return this.minimunPrice;
         }
         public string getCouponCode()

@@ -37,7 +37,6 @@ namespace Final643450327_0
         }
         public double payBill()
         {
-
             return totalPrice;
         }
     }

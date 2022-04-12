@@ -399,7 +399,6 @@ namespace Final643450327_0
             double totalCoupon = coupon.getCoupon();
             textBox2.Text = totalCoupon.ToString();
             labelCouponCode.Text = coupon.getCouponCode().ToString();
-
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

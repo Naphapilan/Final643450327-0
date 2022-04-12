@@ -39,7 +39,6 @@ namespace Final643450327_0
         public void addNotebook(double notebook)
         {
             this.notebook = (pricenotebook * notebook);
-
         }
         public double getNotebook()
         {
@@ -76,7 +75,6 @@ namespace Final643450327_0
         public void addRuler(double ruler)
         {
             this.ruler = (priceruler * ruler);
-
         }
         public double getRuler()
         {
@@ -89,7 +87,6 @@ namespace Final643450327_0
         public void addEraser(double eraser)
         {
             this.eraser = (priceeraser * eraser);
-
         }
         public double getEraser()
         {
@@ -102,7 +99,6 @@ namespace Final643450327_0
         public void addLiquid(double liquid)
         {
             this.liquid = (priceliquid * liquid);
-
         }
         public double getLiquid()
         {
@@ -115,7 +111,6 @@ namespace Final643450327_0
         public void addColor12(double color12)
         {
             this.color12 = (pricecolor12 * color12);
-
         }
         public double getColor12()
         {
@@ -128,7 +123,6 @@ namespace Final643450327_0
         public void addColor24(double color24)
         {
             this.color24 = (pricecolor24 * color24);
-
         }
         public double getColor24()
         {
@@ -141,7 +135,6 @@ namespace Final643450327_0
         public void addColor36(double color36)
         {
             this.color36 = (pricecolor36 * color36);
-
         }
         public double getColor36()
         {
