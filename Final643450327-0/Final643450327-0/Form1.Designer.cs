@@ -84,6 +84,8 @@
             this.tbGetMoney = new System.Windows.Forms.TextBox();
             this.tbChange = new System.Windows.Forms.TextBox();
             this.btPay = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -642,11 +644,31 @@
             this.btPay.UseVisualStyleBackColor = true;
             this.btPay.Click += new System.EventHandler(this.btPay_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(185, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 25);
+            this.label8.TabIndex = 62;
+            this.label8.Text = "ราคารวม";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(475, 28);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 25);
+            this.label9.TabIndex = 63;
+            this.label9.Text = "ราคารวม";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 518);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btPay);
             this.Controls.Add(this.tbChange);
             this.Controls.Add(this.tbGetMoney);
@@ -769,5 +791,7 @@
         private TextBox tbGetMoney;
         private TextBox tbChange;
         private Button btPay;
+        private Label label8;
+        private Label label9;
     }
 }
