@@ -543,5 +543,17 @@ namespace Final643450327_0
                 }
             }
         }
+
+        private void btPay_Click(object sender, EventArgs e)
+        {
+            string pay = this.textBox2.Text;
+            string getmoney = this.tbGetMoney.Text;
+
+            double Pay = Convert.ToDouble(pay);
+            double GetMoney = Convert.ToDouble(getmoney);
+            saleManagement.Bill(Pay, GetMoney);
+            double Tpay = saleManagement.payBill();
+            tbChange.Text = Tpay.ToString();
+        }
     }
 }

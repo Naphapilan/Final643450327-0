@@ -79,6 +79,11 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbGetMoney = new System.Windows.Forms.TextBox();
+            this.tbChange = new System.Windows.Forms.TextBox();
+            this.btPay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -559,14 +564,14 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -590,11 +595,63 @@
             this.dataGridView2.Size = new System.Drawing.Size(530, 169);
             this.dataGridView2.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(26, 441);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 25);
+            this.label5.TabIndex = 57;
+            this.label5.Text = "รับเงินมา";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(26, 481);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 25);
+            this.label7.TabIndex = 58;
+            this.label7.Text = "เงินทอน";
+            // 
+            // tbGetMoney
+            // 
+            this.tbGetMoney.Location = new System.Drawing.Point(265, 435);
+            this.tbGetMoney.Name = "tbGetMoney";
+            this.tbGetMoney.Size = new System.Drawing.Size(150, 31);
+            this.tbGetMoney.TabIndex = 59;
+            this.tbGetMoney.Text = "0";
+            this.tbGetMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbChange
+            // 
+            this.tbChange.Enabled = false;
+            this.tbChange.Location = new System.Drawing.Point(265, 475);
+            this.tbChange.Name = "tbChange";
+            this.tbChange.Size = new System.Drawing.Size(150, 31);
+            this.tbChange.TabIndex = 60;
+            this.tbChange.Text = "0";
+            this.tbChange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btPay
+            // 
+            this.btPay.Location = new System.Drawing.Point(465, 451);
+            this.btPay.Name = "btPay";
+            this.btPay.Size = new System.Drawing.Size(112, 34);
+            this.btPay.TabIndex = 61;
+            this.btPay.Text = "ชำระเงิน";
+            this.btPay.UseVisualStyleBackColor = true;
+            this.btPay.Click += new System.EventHandler(this.btPay_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 518);
+            this.Controls.Add(this.btPay);
+            this.Controls.Add(this.tbChange);
+            this.Controls.Add(this.tbGetMoney);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btCoupon);
             this.Controls.Add(this.label6);
@@ -707,5 +764,10 @@
         private ToolStripMenuItem saveToolStripMenuItem;
         private GroupBox groupBox1;
         private DataGridView dataGridView2;
+        private Label label5;
+        private Label label7;
+        private TextBox tbGetMoney;
+        private TextBox tbChange;
+        private Button btPay;
     }
 }

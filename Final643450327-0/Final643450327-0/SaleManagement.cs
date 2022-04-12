@@ -10,10 +10,19 @@ namespace Final643450327_0
     {
       //  private Coupon[10] coupon;
         private Bill bill;
-
+        double totalPrice = 0;
         public void newBill()
         {
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pay"></param>
+        /// <param name="getmoney"></param>
+        public void Bill(double pay,double getmoney)
+        {
+            this.totalPrice = getmoney - pay;
         }
         public bool addCoupontoBill(string couponCode)
         {
@@ -27,9 +36,10 @@ namespace Final643450327_0
         {
             return 0;
         }
-        /*public double payBill(int customerPayment)
+        public double payBill()
         {
-            double totalPrice = 0;
-        }*/
+
+            return totalPrice;
+        }
     }
 }
